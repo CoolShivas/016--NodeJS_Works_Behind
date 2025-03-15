@@ -75,3 +75,36 @@
  * 
  * 
  */
+
+
+
+
+/***
+ * 
+ * 
+ * * * * Symbols in dependency versions :-
+ * 
+    Symbol    |Meaning                                        |Example          |Resolves To
+
+  ^ (Caret)   |Minor and patch updates allowed                |^4.17.1          |4.18.0, not 5.0.0
+  ~ (Tilde)   |Only patch updates allowed                     |~4.17.1          |4.17.2, not 4.18.0
+  Exact       |Fixed version                                  |4.17.1           |4.17.1 only
+  >           |Greater than                                   |>4.17.1          |4.18.0, 5.0.0
+  <           |Less than                                      |<4.17.1          |4.16.0, not 4.17.1
+  >=          |Greater than or equal to                       |>=4.17.1         |4.17.1, 5.0.0
+  <=          |Less than or equal to                          |<=4.17.1         |4.17.1, 4.16.0
+  *           |Any version                                    |*                |4.0.0,5.0.0, etc.
+  Range       |Acceptable range                               |4.16.0 - 4.17.1  |4.16.0, 4.17.1
+  x           |Wildcard for minor/patch versions              |4.x              |4.16.0, 4.18.1 
+
+
+
+           Note: ^4.17.1 is equivalent to 4.x, and ~4.17.1 is equivalent to 4.17.x.
+
+
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
