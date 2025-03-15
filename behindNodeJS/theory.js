@@ -205,13 +205,43 @@
        4.) npm outdated -g :- 
           • To see outdated global packages.
  
-          
+
        5.) npm update –g <package-name>
           
 
        6.) npm remove -g <package-name>
  
 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+/****
+ * 
+ * 
+ * * * * * Development dependency :-
+ * 
+ * 
+      1.) Development dependencies are the packages that aren’t needed for functioning of your project in production.
+
+
+      2.) This can be for formatting, linting, testing, and so on.
+
+
+      3.) If you use npm install --production, those packages won’t be installed, but they will be installed if you don’t use production flag.
+
+      
+      4.) npm install -D eslint :-
+            • This will install eslint as a development dependency.
+            • You will see it in separate property inside package.json named “devDependencies”
+ 
+
+ * 
  * 
  * 
  * 
