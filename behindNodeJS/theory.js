@@ -177,3 +177,43 @@
  * 
  * 
  */
+
+
+
+
+/**
+ * 
+ * * * * * Global packages :-
+ * 
+ * 
+ * 
+      1.) Up until now, we have been installing packages locally.
+      
+
+      2.) To install package globally :-
+            • npm install -g npm-check-updates
+            • On Linux, and macOS, you might have to prefix it with sudo
+            • This package gets installed globally, and you can access from anywhere.
+            • You can try running npm-check-updates command anywhere in any projects without using npx.
+          • npm-check-updates also have an alias named ncu, which you can also use.
+
+
+      3.) Fun fact: npm is itself a global package which means if you need to update npm, you 
+          will do: npm install -g npm
+
+
+       4.) npm outdated -g :- 
+          • To see outdated global packages.
+ 
+          
+       5.) npm update –g <package-name>
+          
+
+       6.) npm remove -g <package-name>
+ 
+
+ * 
+ * 
+ * 
+ * 
+ */
