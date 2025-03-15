@@ -34,3 +34,28 @@
  * 
  * 
  */
+
+
+
+
+/**
+ * 
+ * * * * * * * Node.js Elements :-
+ * 
+ * 
+ * * * * v8 :-
+       Google's high-performance JavaScript engine that compiles JavaScript into machine code.
+       
+       
+/////////------------------------------------------------------------------------------------------
+ * 
+ * 
+ *  * * * * Libuv :-
+       1.) A C library that provides Node.js with cross-platform support for asychronous I/O operations, file system, networking, and more.
+
+        2.) Includes the event loop and thread pool, enabling non-blocking tasks like file reading, networking, and timers.
+       
+       
+ * 
+ * 
+ */
