@@ -45,8 +45,33 @@
  
 
       5.) While importing, first Node.js checks for core modules, then files or folders, and at last looks inside         node_modules.
-      
 
+
+ * 
+ * 
+ */
+
+
+
+/**
+ * 
+ * * * * * Semantic Versioning System :-
+ * 
+ * 
+ *   Have a look on this Version Number. How is it define ? How to understand this ? 
+ 
+          1.0.0
+
+          Here, 1 defines the Major Version. Breaking change, e.g., a rebrand, feature set added.
+
+          Next, 0 defines the Minor Version. Non-breaking noteworthy change, e.g., new component, updated styles.
+
+          Atlast, 0 defines the Patch Version. Small request or bug fix, e.g., update or edit existing slements.
+
+ * 
+ * 
+ * Most of the npm packages use Semantic Versioning System or SemVer. Note: Some packages like typescript, react-native don’t follow it.
+ * 
  * 
  * 
  */
