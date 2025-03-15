@@ -108,3 +108,72 @@
  * 
  * 
  */
+
+
+
+
+/***
+ * 
+ * * * * * * npm commands :-
+ * 
+ * 
+      1.) npm install :-
+            • Even if you delete node_modules, you can use this command to install all of them again. It uses version specified in package-lock.json or package.json
+
+
+      2.) npm list :-
+            • Because of symbols, the versions specified in package.json might not be installed. 
+            • To see the exact versions of all packages installed in your project.
+            • Use -a flag to see whole list.
+ 
+
+      3.) npm view <package-name> :-
+            • To see details of a package that you installed including version, license, author, and so on.
+
+
+      4.) npm view <package-name> <package.json-property> :-
+            • Example: npm view express version
+            • You can use it to view any property from package.json of a package that you installed.
+
+
+      5.) npm view <package-name> versions :-
+            • You can use it to see all versions of a package.
+
+
+      6.)  npm install <package-name>@<version> :- 
+            • Examples:
+              • npm install express@4.0.0 // ^4.0.0
+              • npm install express@4.0.0 --save-exact // To install exact version.
+              • npm install express@~4.0.0
+              • npm install express@4.2.x
+
+            • You can use any symbols while specifying version.
+
+        
+      7.) npm outdated :-
+            • It shows outdated packages in your project.
+            • Current: The version of the package currently installed in your project.
+            • Wanted: The latest version that satisfies the version range defined in your package.json.It basically uses the symbols to get it.
+            • Latest: Absolute latest version of the package.
+
+
+      8.)  npm remove <package-name> 
+
+
+      9.)  npm update :-
+            • This updates all the packages in your project, but it follows the range defined in 
+            package.json. It doesn’t update to absolute latest version.
+
+
+      10.)  npx npm-check-updates :-
+            • npx is a CLI tool that comes with npm.
+            • It is used to execute a package without requiring you to install globally or locally.
+            • It is useful for temporary usage of a package.
+            • npm-check-updates is a package which you can use to upgrade your packages to 
+              absolute latest versions.
+            • Use -u flag at the end to update the packages after reviewing.
+            • This only updates package.json, then you can use npm install to update the 
+            packages.
+ * 
+ * 
+ */
