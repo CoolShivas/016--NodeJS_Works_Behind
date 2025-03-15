@@ -36,6 +36,9 @@
  */
 
 
+//////////************************************************************************************* */
+//////////----------------------------------------------------------------------------------------
+//////////************************************************************************************* */
 
 
 /**
@@ -56,6 +59,39 @@
         2.) Includes the event loop and thread pool, enabling non-blocking tasks like file reading, networking, and timers.
        
        
+ * 
+ * 
+ */
+
+        
+//////////************************************************************************************* */
+//////////----------------------------------------------------------------------------------------
+//////////************************************************************************************* */
+
+
+/***
+ * 
+ * * * * How Node.js program starts ?
+ * 
+ * * * * * * * Main Thread (handles light weight task and Synchronous Tasks):-
+                1.) Initialize Program.
+                2.) Top Level Code.
+                3.) Imports Modules.
+                4.) Registers Event Callbacks.
+                5.) Start Event Loop  
+                Now Offloading starts and send the heavy code for execution to the Thread Pool.
+
+
+* * * * * * * Thread Pool (handles heavy weight task and Asynchronous Tasks):-:-
+                    1.) Thread #1.
+                    2.) Thread #2.
+                    3.) Thread #3.
+                    4.) Thread #4.
+
+
+ * Thread pool by default has 4 threads.
+ * Event loop, and thread pool are part of Libuv which offloads heavy tasks to thread pool.
+ * Heavy tasks include file system, crytography, compression, etc.
  * 
  * 
  */
